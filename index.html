@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <style>* {
+         border: border-box;
+         font-style: arial;
+         padding: 0%;
+         margin: 0%;
+         }
+         .navbar {
+         height: 80px;
+         background-color: #0f1111;
+         display: flex;
+         text-align: center;
+         align-items: center;
+         justify-content: space-evenly;
+         width: 100%;
+         position: fixed;
+         }
+         /**box**/
+         .box {
+         text-decoration: none;
+         color: white;
+         align-content: center;
+         height: 50px;
+         width: 140px;
+         font: size 50px;
+         border: 2px solid transparent;
+         align-items: center;
+         text-align: center;
+         }
+         .box:hover {
+         border: 2px solid white;
+         }
+         /**home**/
+         .home {
+         height: 650px;
+         background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(160, 194, 202)),
+         url(https://www.decorilla.com/online-decorating/wp-content/uploads/2023/12/Luxury-interior-design-guide-by-Decorilla.jpg);
+         background-position: center bottom;
+         background-size: cover;
+         display: flex; justify-content: center; align-items: center; height: 100vh;  background-size: cover; background-position: center; text-align: center; color: white; padding: 20px;
+         }
+         #work1{
+         background-color: #EBEBEB;
+         }
+         #homework{
+         font-size: 60px;
+         color: black;
+         }
+         #homework2{
+         font-size: 30px;
+         background-color: #EB595F;
+         width: 350px;
+         margin-left: 180px;
+         border-radius: 15px;
+         color: white;
+         }
+         #f1{
+         text-align: center;
+         align-content: center;
+         background-color: #dadce0;
+         }
+         #name{
+         align-content: center;
+         text-align: center;
+         background-color:#dadce0;
+         }
+         #name1{
+         align-content: center;
+         text-align: center;
+         background-color:#dadce0;
+         }
+         #name2{
+         align-content: center;
+         text-align: center;
+         background-color:#dadce0;
+         }
+         /**container**/
+         .container{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 500px;
+         background-color:#EBEBEB;
+         }
+         .img1{
+         height: 370px;
+         width: 450px;
+         margin: 60px;
+         text-align: center;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2021/10/25035618/modern-l-shaped-kitchen.jpg) ;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .img1:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .img2{
+         height: 370px;
+         width: 450px;
+         margin: 60px;
+         text-align: center;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2020/05/21184918/u-shaped-kitchen-design-ideas-for-indian-homes.jpg) ;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .img2:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .img3{
+         height: 370px;
+         width: 450px;
+         margin: 60px;
+         text-align: center;
+         background-image:url(https://i.pinimg.com/originals/5c/1a/e2/5c1ae251e91073eff649e3df534ed216.png) ;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .img3:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .container1{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 500px;
+         background-color:#EBEBEB;
+         }
+         .photo1{
+         height: 370px;
+         width: 350px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2021/10/30140840/ceiling-to-floor-sliding-wardrobe-with-attached-dresser-unit.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .photo1:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .photo2{
+         height: 370px;
+         width: 350px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2020/08/10022436/contemporary-sliding-door-wardrobe-designs-for-bedroom.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .photo2:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .photo3{
+         height: 370px;
+         width: 350px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2021/06/30174526/space-saving-wardrobe-with-frosted-glass-door.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .photo3:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .container2{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 500px;
+         background-color:#EBEBEB;
+         }
+         .im1{
+         height: 370px;
+         width: 500px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2020/06/07112448/contemporary-style-living-room-with-panelling-and-paintings.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .im1:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .im2{
+         height: 370px;
+         width: 500px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2020/03/21012601/chandelier-luxury-modern-living-room-design.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .im2:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .im3{
+         height: 370px;
+         width: 500px;
+         margin: 60px;
+         text-align: center;
+         background-size: cover;
+         background-position: center;
+         border-radius: 20px;
+         background-image:url(https://media.designcafe.com/wp-content/uploads/2020/03/21012613/luxury-living-room-designs.jpg);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         .im3:hover {
+         transform: scale(1.1); /* Scale the image */
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow */
+         }
+         .container15 {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 20px;
+         background-color: #EBEBEB;
+         }
+         .info-section {
+         border: 1px solid #ccc;
+         padding: 20px;
+         width: 45%;
+         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+         }
+         .info-section img {
+         max-width: 100%;
+         height: auto;
+         margin-bottom: 10px;
+         }
+         .info-section h2 {
+         font-size: 1.5rem;
+         color: #333;
+         margin: 10px 0;
+         }
+         .info-section h3 {
+         font-size: 1rem;
+         color: #666;
+         }
+         #info{
+         align-content: center;
+         text-align: center;
+         font-size: 40px;
+         background-color: #dadce0;
+         }
+         /* Footer Container */
+         .footer {
+         background-color: #222;
+         color: #fff;
+         padding: 40px 20px;
+         font-family: Arial, sans-serif;
+         }
+         .footer-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         max-width: 1200px;
+         margin: 0 auto;
+         }
+         .footer-section {
+         flex: 1 1 300px;
+         margin: 20px;
+         }
+         .footer-section h3 {
+         font-size: 20px;
+         margin-bottom: 15px;
+         color: #ffce00;
+         }
+         .footer-section a {
+         color: #ddd;
+         display: flex;
+         align-items: center;
+         margin: 8px 0;
+         text-decoration: none;
+         font-size: 15px;
+         transition: color 0.3s ease;
+         }
+         .footer-section a i {
+         margin-right: 8px;
+         color: #ffce00;
+         }
+         .footer-section a:hover {
+         color: #ffce00;
+         }
+         .footer-section p {
+         margin: 10px 0;
+         font-size: 15px;
+         color: #bbb;
+         display: flex;
+         align-items: center;
+         }
+         .footer-section p i {
+         margin-right: 8px;
+         color: #ffce00;
+         }
+         /* Footer Bottom */
+         .footer-bottom {
+         text-align: center;
+         padding-top: 20px;
+         font-size: 14px;
+         color: #bbb;
+         border-top: 1px solid #444;
+         margin-top: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="navbar">
+         <div class="box">
+            <img src="https://ideogram.ai/assets/image/lossless/response/E443dNemR_imqEqPwTm_rw" alt="hi" height="50px" width="120px">
+         </div>
+         <div class="box">
+            <p>login</p>
+         </div>
+         <div class="box">
+            <p>Interiors</p>
+         </div>
+         <div class="box">
+            <select id="design" name="design" style="padding: 10px 15px; font-size: 16px; border-radius: 5px; border: none ; background-color: #0F1111; color: #ffffff; width: 120px; cursor: pointer; transition: all 0.3s ease;">
+               <option value="default" disabled selected>Design</option>
+               <option value="modular-kitchen-designs">Modular Kitchen Designs</option>
+               <option value="wardrobe-designs">Wardrobe Designs</option>
+               <option value="bathroom-designs">Bathroom Designs</option>
+               <option value="master-bedroom-designs">Master Bedroom Designs</option>
+               <option value="living-room-designs">Living Room Designs</option>
+               <option value="pooja-room-designs">Pooja Room Designs</option>
+               <option value="tv-unit-designs">TV Unit Designs</option>
+               <option value="false-ceiling-designs">False Ceiling Designs</option>
+               <option value="kids-bedroom-designs">Kids Bedroom Designs</option>
+               <option value="balcony-designs">Balcony Designs</option>
+               <option value="dining-room-designs">Dining Room Designs</option>
+               <option value="foyer-designs">Foyer Designs</option>
+               <option value="homes-by-livspace">Homes By Livspace</option>
+               <option value="home-office-designs">Home Office Designs</option>
+               <option value="guest-bedroom-designs">Guest Bedroom Designs</option>
+               <option value="window-designs">Window Designs</option>
+               <option value="flooring-designs">Flooring Designs</option>
+               <option value="wall-decor-designs">Wall Decor Designs</option>
+               <option value="wall-paint-designs">Wall Paint Designs</option>
+               <option value="home-wallpaper-designs">Home Wallpaper Designs</option>
+               <option value="tile-designs">Tile Designs</option>
+               <option value="study-room-designs">Study Room Designs</option>
+               <option value="kitchen-sinks">Kitchen Sinks</option>
+               <option value="space-saving-designs">Space Saving Designs</option>
+            </select>
+         </div>
+         <div class="box">
+            <select id="Magzine" name="Magzine" style="padding: 10px 15px; font-size: 16px; border-radius: 5px; border: none ; background-color: #0F1111; color: #ffffff; width: 120px; cursor: pointer; transition: all 0.3s ease;">
+               <option value="default" disabled selected> Magzine</option>
+               <option value="Room Ideas">Room Ideas</option>
+               <option value="Decor & Inspiration">Decor & Inspiration</option>
+               <option value="Celing design">Celing design</option>
+               <option value="Furniture Ideas">Furniture Ideas</option>
+               <option value="Lighting Ideas">Lighting Ideas</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Livspace tv</p>
+         </div>
+         <div class="box">
+            <select id="Cities" name="Cities" style="padding: 10px 15px; font-size: 16px; border-radius: 5px; border: none; background-color: #0F1111; color: #ffffff; width: 120px; cursor: pointer; transition: all 0.3s ease;">
+               <option value="default" disabled selected>Cities</option>
+               <option value="mumbai">Mumbai</option>
+               <option value="bangalore">Bangalore</option>
+               <option value="delhi">Delhi</option>
+               <option value="kolkata">Kolkata</option>
+               <option value="chennai">Chennai</option>
+               <option value="hyderabad">Hyderabad</option>
+               <option value="pune">Pune</option>
+               <option value="ahmedabad">Ahmedabad</option>
+               <option value="jaipur">Jaipur</option>
+               <option value="lucknow">Lucknow</option>
+            </select>
+         </div>
+         <div class="box">
+            <span>Store locator</span>
+         </div>
+         <div class="box">
+            <select id="services" name="services" style="padding: 10px 15px; font-size: 16px; border-radius: 5px; border: 1px solid #0F1111; background-color: #0F1111; width: 200px; cursor: pointer; transition: all 0.3s ease;color: #fffbfb;">
+               <option value="More">More</option>
+               <option value="About us">About us</option>
+               <option value="Contact us">SEO</option>
+            </select>
+         </div>
+      </header>
+      <div class="shopsection">
+         <div class="home">
+            <h1 style="margin-top:350px; font-weight: bold; max-width: 800px; line-height: 1.5;">
+               <p id="homework">Home To Beautiful Interiors</p>
+               <div id="homework2">
+                  <p>Book free consultation</p>
+               </div>
+            </h1>
+         </div>
+      </div>
+      <h1 id="f1">Why Choose Interio Homes?</h1>
+      <div id="work1" style="display: flex; justify-content: space-around; align-items: center; gap: 30px; padding: 20px;">
+         <!-- Item 1 -->
+         <span style="text-align: center; border: 2px solid #ccc; padding: 20px; border-radius: 10px; width: 150px;">
+            <i class="fa-solid fa-house" style="font-size: 40px; color: #ffce00;"></i>
+            <h2 style="font-size: 18px; color: #333;">Personalised Designs</h2>
+         </span>
+         <!-- Item 2 -->
+         <span style="text-align: center; border: 2px solid #ccc; padding: 20px; border-radius: 10px; width: 150px;">
+            <i class="fa-solid fa-database" style="font-size: 40px; color: #ffce00;"></i>
+            <h2 style="font-size: 18px; color: #333;">20% EXTRA Storage</h2>
+         </span>
+         <!-- Item 3 -->
+         <span style="text-align: center; border: 2px solid #ccc; padding: 20px; border-radius: 10px; width: 150px;">
+            <i class="fa-solid fa-check" style="font-size: 40px; color: #ffce00;"></i>
+            <h2 style="font-size: 18px; color: #333;">No Cost EMIs</h2>
+         </span>
+         <!-- Item 4 -->
+         <span style="text-align: center; border: 2px solid #ccc; padding: 20px; border-radius: 10px; width: 150px;">
+            <i class="fa-solid fa-award" style="font-size: 40px; color: #ffce00;"></i>
+            <h2 style="font-size: 18px; color: #333;">10 Year Warranty</h2>
+         </span>
+      </div>
+      <h1 id="name">Modular kitchen Designs</h1>
+      <div class="container">
+         <div class="img1"></div>
+         <div class="img2"></div>
+         <div class="img3"></div>
+      </div>
+      <h1 id="name1">Personalised Bedrooms For Style And Comfort</h1>
+      <div class="container1">
+         <div class="photo1"></div>
+         <div class="photo2"></div>
+         <div class="photo3"></div>
+      </div>
+      <h1 id="name2">Lastest And Trendy Living Room Designs</h1>
+      <div class="container2">
+         <div class="im1"></div>
+         <div class="im2"></div>
+         <div class="im3"></div>
+      </div>
+      <h2 id="info">What you Get ?</h2>
+      <div class="container15">
+         <div class="info-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsw7dSaFLyaMOE2MgPMdNauPlJZxg7LDZIIA&s" alt="Living/Dining Room" height="200px" width="200px">
+            <h2>Living/Dining Room</h2>
+            <h3>TV Unit, TV Back Panelling, Crockery Unit, Bar Unit, Bookshelf</h3>
+         </div>
+         <div class="info-section">
+            <img src="https://www.shutterstock.com/image-vector/kitchen-icon-design-260nw-1066631165.jpg" alt="Kitchen" height="200px" width="200px">
+            <h2>Kitchen</h2>
+            <h3>Countertops, Backsplashes, Accessories, Shutters, Storage</h3>
+         </div>
+         <div class="info-section">
+            <img src="https://www.shutterstock.com/image-vector/double-bed-vector-icon-600nw-1175446654.jpg" alt="Bedroom" height="200px" width="200px">
+            <h2>Bedroom</h2>
+            <h3>Wardrobes, TV Unit, Bed with Storage, Dressing Unit, Study Unit</h3>
+         </div>
+         <div class="info-section">
+            <img src="https://cbx-prod.b-cdn.net/COLOURBOX65077442.jpg?width=800&height=800&quality=70" alt="Innovative Storage" height="200px" width="200px">
+            <h2>Innovative Storage</h2>
+            <h3>Janitor Unit, Skirting Drawer, Pantry Pull Out, Appliance Garage, Hidden Bar Cabinet, Magic Corner</h3>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="footer-container">
+            <!-- Social Media Links -->
+            <div class="footer-section social-media">
+               <h3>Follow Us</h3>
+               <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+               <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+               <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
+               <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+               <h3>Quick Links</h3>
+               <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+               <a href="#services"><i class="fas fa-concierge-bell"></i> Our Services</a>
+               <a href="#projects"><i class="fas fa-images"></i> Projects</a>
+               <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <!-- Contact Info -->
+            <div class="footer-section contact-info">
+               <h3>Contact Us</h3>
+               <p><i class="fas fa-envelope"></i> Email: info@interiordesign.com</p>
+               <p><i class="fas fa-phone"></i> Phone: +1 (555) 123-4567</p>
+               <p><i class="fas fa-map-marker-alt"></i> Address: 123 Design Street, City, State, ZIP</p>
+            </div>
+         </div>
+         <!-- Copyright -->
+         <div class="footer-bottom">
+            <p>&copy; 2024 Interior Design. All rights reserved.</p>
+         </div>
+      </footer>
+      <!-- Font Awesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </body>
+</html>
